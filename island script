@@ -8631,7 +8631,7 @@ local BRINGMOBSDNJUGA = Tab:CreateToggle({
 				if game.Players.LocalPlayer.Character:FindFirstChild("forgeHammer") == nil and game.Players.LocalPlayer.Backpack:FindFirstChild("forgeHammer") == nil then
 					GetTool("forgeHammer")
 				else
-					Message("😎", "You got the forgeHammer Already!", "xD", "Woah")
+					Message("Devil", "You got the forgeHammer Already!", "xD", "Woah")
 				end
 			end
 		})
@@ -8645,13 +8645,13 @@ local BRINGMOBSDNJUGA = Tab:CreateToggle({
 						if game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool"):FindFirstChild("axe") then
 							GetTool("gregsHammer", true, game.Players.LocalPlayer.Character:FindFirstChildWhichIsA("Tool").Name)
 						else
-							Message("😳", "You can Only Bypass Axes and Pickaxes :)", "hehe", "Woah")
+							Message("Devil", "You can Only Bypass Axes and Pickaxes :)", "hehe", "Woah")
 						end
 					else
-						Message("🤪", "equip the tool you want to bypass first!", "Ok :)))", "Woah")
+						Message("Devil", "equip the tool you want to bypass first!", "Ok :)))", "Woah")
 					end
 				else
-					Message("😎", "You got the gregsHammer Already!", "xD", "Woah")
+					Message("Devil", "You got the gregsHammer Already!", "xD", "Woah")
 				end
 			end
 		})
@@ -8670,13 +8670,13 @@ local BRINGMOBSDNJUGA = Tab:CreateToggle({
 							task.wait()
 							TOOL.Parent = game.Players.LocalPlayer.Backpack
 						else
-							Message("😳", "You can Only Bypass Plows :)", "hehe", "Woah")
+							Message("Devil", "You can Only Bypass Plows :)", "hehe", "Woah")
 						end
 					else
-						Message("🤪", "equip the tool you want to bypass first!", "Ok :)))", "Woah")
+						Message("Devil", "equip the tool you want to bypass first!", "Ok :)))", "Woah")
 					end
 				else
-					Message("😎", "You got the crystallinePlow Already!", "xD", "Woah")
+					Message("Devil", "You got the crystallinePlow Already!", "xD", "Woah")
 				end
 			end
 		})
@@ -8814,7 +8814,7 @@ local BRINGMOBSDNJUGA = Tab:CreateToggle({
 		})
 
 		BypassedProblemsSelection:AddButton({
-			Title = "Have Fun 🤯",
+			Title = "Have Fun",
 			Description = "",
 			Callback = function()
 				if TimesClicked > 14 then
@@ -9074,31 +9074,6 @@ Toggle = Tab:CreateToggle({
 		Rounding = 0,
 		Callback = function(Value)
 			_G.PlowDistance = Value
-		end
-	})
-
-
-	local CropPlaceAuraSelection = Tabs.Other:AddSection("Crop Place Aura")
-
-	local CropPlaceAura = CropPlaceAuraSelection:AddToggle("CropPlaceAura", {Title = "Crop Place Aura", Default = false })
-
-	CropPlaceAura:OnChanged(function(Value)
-		if Value == true then
-			_G.AuraAuraPlace = true
-		else
-			_G.AuraAuraPlace = false
-		end
-	end)
-
-	local CropPlaceAuraDistance = CropPlaceAuraSelection:AddSlider("CropPlaceAuraDistance", {
-		Title = "Crop Distance",
-		Description = "",
-		Default = 25,
-		Min = 1,
-		Max = 25,
-		Rounding = 0,
-		Callback = function(Value)
-			_G.PlaceCropsMaxArea = Value
 		end
 	})
 
@@ -9492,25 +9467,14 @@ end
 
 ]]
 
---[[
-
-local Button = Tab:CreateButton({
-	Name = "Anti Cheat Bypass [BETA]",
-	Callback = function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/samuelLovesPie/verm_releases/main/IslandsTPBypass.lua"))()
-	end,
-})
-
-]]
 
 
 
 	_G.TweenFlySpeed = 25
-
-	_G.RockTarget = "Stone"
+	_G.RockTarget = "Iron"
 	_G.RockFarmSpeed = 25
-	_G.AutoReplaceCrop = true
-	_G.SelectedTree = "all"
+	_G.AutoReplaceCrop = False
+	_G.SelectedTree = "oak"
 	_G.SelectedMob = "slime"
 	_G.SelectedCrop = "wheat"
 	_G.CropAura_BETA = false
