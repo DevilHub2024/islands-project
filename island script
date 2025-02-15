@@ -10,7 +10,7 @@ local IsPremium = true
 local DidKey = false
 local ScriptVersion = "V1"
 
-local FileName = "Devil Isalnds"
+local FileName = "Devil isalnds"
 local GameName = "Islands"
 local DeveloperVersion = true
 
@@ -22,7 +22,6 @@ function SendNotification(Title, Text)
 	})
 end	
 
-SendNotification("Welcome!", "Welcome to "..FileName .. " " .. ScriptVersion.."!")
 
 local PremiumText1 = "ITS FREE"
 
