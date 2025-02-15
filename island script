@@ -1,3 +1,5 @@
+				setclipboard("discord.gg/4tKQj3wg6a")
+
 print("Script Sourc is public on our discord which is set to clipboad apon exucte")
 warn("This script is a redo of Neko Hub")
 for i = 1, 50 do
@@ -184,8 +186,6 @@ game:GetService("Players").LocalPlayer.Idled:connect(function()
 end)
 
 local NofLibery = loadstring(game:HttpGet('https://raw.githubusercontent.com/NtReadVirtualMemory/Open-Source-Scripts/refs/heads/main/Rayfield.lua'))() -- https://raw.githubusercontent.com/pascaldercoole1/NekoHub-Beta/main/Nekohub%20V3
-
-DebugCheck(0,"Loaded!")
 
 DebugCheck(0,"Anti AFK: Loaded!")
 
@@ -1479,13 +1479,13 @@ if DeveloperVersion == false then
 	end
 else
 	Window = Fluent:CreateWindow({
-		Title = "Islands.God "..ScriptVersion.." [Developer!] "..holidayMessage,
-		SubTitle = "by NtOpenprocess and soldo_io", -- neverloseyoursmile_88
+		Title = "Devil Islands",
+		SubTitle = "By Swopo2011",
 		TabWidth = 160,
 		Size = UDim2.fromOffset(580, 460),
-		Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+		Acrylic = true, 
 		Theme = "Dark",
-		MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
+		MinimizeKey = Enum.KeyCode.LeftControl 
 	})
 
 	Tabs = {
@@ -1497,7 +1497,6 @@ else
 		BypassFun = Window:AddTab({ Title = "Bypass.Fun", Icon = "server" }),
 		Other = Window:AddTab({ Title = "Other", Icon = "sidebar" }),
 		Settings = Window:AddTab({ Title = "Settings", Icon = "settings" }),
-		DeveloperTab = Window:AddTab({ Title = "Dev", Icon = "" }),
 	}
 end 
 
