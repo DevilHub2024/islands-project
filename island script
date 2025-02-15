@@ -4071,35 +4071,6 @@ end
 
 				-- task.wait(0.6)
 
-				if _G.AutoReplaceCrop == true then
-					local TTTT = game:GetService("RunService").RenderStepped:Connect(function()
-
-						if A < 40 then
-							task.wait()
-							A = A + 1
-							for Blocki = 1, #ToHarvest do
-								if ISTTTTON == false then return nil end
-								if OriginalPositions[AACOUNT] and OriginalPositions[AACOUNT] ~= nil and OriginalPositions[AACOUNT] ~= nil then
-									_G.orgPos = OriginalPositions[AACOUNT]
-									_G.AACOUNT = AACOUNT
-
-									-- __IGNORESTR__
-									-- loadstring("__IGNORESTR__local ohTable1 = {['upperBlock'] = false,[_G.CropPlaceH1] =  _G.CropPlaceHash,['cframe'] = _G.orgPos,['blockType'] = _G.OriginalNames[_G.AACOUNT]};game:GetService('ReplicatedStorage').rbxts_include.node_modules['@rbxts'].net.out._NetManaged.CLIENT_BLOCK_PLACE_REQUEST:InvokeServer(ohTable1)")()
-									loadstring("local ohTable1 = {['upperBlock'] = false,[_G.CropPlaceH1] =  _G.CropPlaceHash,['cframe'] = _G.orgPos,['blockType'] = _G.OriginalNames[_G.AACOUNT]};game:GetService('ReplicatedStorage').rbxts_include.node_modules['@rbxts'].net.out._NetManaged.CLIENT_BLOCK_PLACE_REQUEST:InvokeServer(ohTable1)")()
-
-									AACOUNT = AACOUNT + 1   
-								else
-									AACOUNT = AACOUNT + 1
-									-- warn("Original position of block " .. Block.Name .. " is nil. Skipping reset.")
-								end
-
-							end
-							Placeing = false
-						end
-					end)
-				end
-			end
-
 			if _G.SuperFastCropFarm ~= true then
 				task.wait(0.4)
 			end
