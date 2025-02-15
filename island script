@@ -1,5 +1,3 @@
-				setclipboard("discord.gg/4tKQj3wg6a")
-
 print("Script Sourc is public on our discord which is set to clipboad apon exucte")
 warn("This script is a redo of Neko Hub")
 for i = 1, 50 do
